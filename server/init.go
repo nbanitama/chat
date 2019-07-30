@@ -32,6 +32,7 @@ func Start() {
 
 func handleClient(conn net.Conn) {
 	defer conn.Close()
+	util.Debug("handleClient: get new Client")
 	daytime := time.Now().String()
 	conn.Write([]byte(daytime))
 }
