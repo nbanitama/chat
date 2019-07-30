@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/nbanitama/chat/util"
 
 	"github.com/nbanitama/chat/server"
 )
 
 func main() {
-	fmt.Println("Hello Chat")
+	util.Debug("Hello Chat")
 	server.Start()
 }
